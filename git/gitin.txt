@@ -1,0 +1,75 @@
+cd .. going back
+ls list the files inside the directory
+
+
+# Initialize a Git repository
+
+->git init
+
+
+# Clone a repository:
+
+->git clone <repository-url>
+
+
+# Check the status of your repository:
+
+-> git status
+
+
+2. Working with Changes
+
+# Stage changes for commit:
+
+->git add <file> for single file
+->git add . for all files 
+->git commit -m "Your commit message" // Commit changes
+
+
+# View commit history:
+
+->git log //
+
+
+3. Branch Management
+
+# List all branches:
+
+->git branch
+->git branch --all
+->git branch <branch-name>   // Create a new branch
+->git checkout <branch-name> // switch the branch
+->git checkout -b <branch-name>  // Create and switch to a new branch
+->git branch -d <branch-name>  // Delete a branch
+->git merge <branch-name> // Merge a branch into the current branch:
+->git Rebase <branch-name> // Rebase changes
+->git merge --abort 
+->git rebase --abort
+
+4. Working with Remote Repositories
+
+->git remote -v  // View remote repositories
+->git remote add <name> <repository-url> //Add a remote repository
+->git fetch // Fetch changes from a remote
+->git pull // Pull changes from a remote
+->git push origin <branch-name> // Push changes to a remote
+
+5. Tagging
+
+->git tag <tag-name> // Create a new tag
+->git push origin <tag-name> // Push tags to a remote repository
+->git tag // git tag
+
+
+
+
+
+
+
+
+
+
+
+
+
+

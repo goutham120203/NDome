@@ -1,0 +1,48 @@
+1. Create a New Branch Locally
+
+->git branch <branch_name>  # Create a new branch
+->git checkout <branch_name>  # Switch to the new branch
+->git checkout -b <branch_name> #Alternatively, you can create and switch in one command
+
+->git push -u origin <branch_name> // git push -u origin <branch_name>
+*If the branch is remote and doesn’t exist locally, Git will automatically create a local branch tracking the remote one.
+->git fetch origin  # Fetch updates from the remote repository
+->git checkout <branch_name>  # Switch to the branch
+
+Alternatively, use:
+
+->git fetch origin <branch_name>:<branch_name>  # Fetch and create the branch locally
+->git checkout <branch_name>
+
+2. List All Branches
+
+->git branch #git branch
+->git branch -r #Remote branches
+->git branch -a All branches (local + remote)
+->git branch -all
+
+3. Merge a Branch
+
+-> git merge <branch_name>  //When you want to combine changes from another branch into your current branch
+ 
+
+4.Delete a Branch
+
+git branch -d <branch_name>  # Safe delete (only deletes if fully merged)
+git branch -D <branch_name>  # Force delete
+
+git push origin --delete <branch_name> #Delete a remote branch
+
+** Best Practices
+Always pull the latest changes from the main branch before creating a new branch
+
+->git checkout main
+->git pull origin main
+->git checkout -b <new_branch>
+
+When pushing a branch for the first time, link it to the remote
+->git push -u origin <branch_name>
+
+
+
+
